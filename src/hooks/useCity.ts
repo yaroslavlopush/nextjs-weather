@@ -11,6 +11,8 @@ const useCityList = () => {
         if (city.name.toLowerCase().startsWith(searchStr.toLowerCase())) {
             return city;
         }
+        
+        return null;
       })
       setCityList(startsWith);
     } catch (error) {
